@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>russia</title>
+		<script src = "js/jquery.js" type = "text/javascript"></script>
+		<script src = "js/control.js" type = "text/javascript"></script>
+		<script src = "js/shapes.js" type = "text/javascript"></script>
+		<style type="text/css">
+			div.parent {/* 親ボックス */
+				width: 420px;
+				height: 700px;
+				position: absolute;
+				top: 15px;
+				left: 40px;
+			}
+
+			div.child_top {/* ボックス1 */
+				width: 320px;
+				height: 480px;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+
+			div.chind_bottom {/* ボックス2 */
+				width: 320px;
+				height: 200px;
+				position: absolute;
+				top: 465px;
+				left: 0px;
+			}
+		</style>
+	</head>
+	<body onload="Tetris.Init()" background="img/nintendo.gif">
+		<section>
+			<div class="parent">
+			<div class="chind_top" id="canvasesdiv" >
+				<canvas id = "back" width = "320", height="480"
+				style = "z-index :1; position:absolute;top:0px;left:0px;border:1px solid black;"></canvas>
+				<canvas id = "field"
+				style = "z-index : 2; position:absolute;top:0px;left:0px;border:1px solid black;" ></canvas>
+			</div>
+			<div class="chind_bottom">
+				<p><font color="#ffffff">W:Transform A:left D:right S:speed down</font></p>
+				<p><font color="#ffffff">ゲームゾーン任意場所をクリックすると開始します。終了するとメッセージボクスが表示されます</font></p>
+			</div>
+			</div>
+			<table style="float: right">
+				<tr>
+					<td><img src="img/classicgame/america/Bumblebee.png" /></td>
+					<td><img src="img/classicgame/america/Ironman.png" /></td>
+					<td><img src="img/classicgame/america/Killzone.png" /></td>
+					<td><img src="img/classicgame/america/Spiderman.png" /></td>
+					<td><img src="img/classicgame/america/Starwars.png" /></td>
+					<td><img src="img/classicgame/america/Predator.png" /></td>
+				</tr>
+				<tr>
+					<td><img src="img/classicgame/console/console-1.png" /></td>
+					<td><img src="img/classicgame/console/console-2.png" /></td>
+					<td><img src="img/classicgame/console/console-3.png" /></td>
+					<td><img src="img/classicgame/console/console-4.png" /></td>
+					<td><img src="img/classicgame/console/console-5.png" /></td>
+					<td><img src="img/classicgame/console/Playstation.png" /></td>
+				</tr>
+				<tr>
+					<td><img src="img/classicgame/pcgame/Assassins.png" /></td>
+					<td><img src="img/classicgame/pcgame/Battlefield.png" /></td>
+					<td><img src="img/classicgame/pcgame/NBA.png" /></td>
+					<td><img src="img/classicgame/pcgame/counterstrike.png" /></td>
+					<td><img src="img/classicgame/pcgame/snake.png" /></td>
+					<td><img src="img/classicgame/pcgame/Lost.png" /></td>
+				</tr>
+				<tr>
+					<td><img src="img/classicgame/supermario/Flower-Fire.png" /></td>
+					<td><img src="img/classicgame/supermario/Goomba.png" /></td>
+					<td><img src="img/classicgame/supermario/Mushroom-Life.png" /></td>
+					<td><img src="img/classicgame/supermario/Paper-Bowser.png" /></td>
+					<td><img src="img/classicgame/supermario/Paper-Mario.png" /></td>
+					<td><img src="img/classicgame/supermario/Question-Block.png" /></td>
+				</tr>
+			</table>
+		</section>
+	</body>
+</html>
